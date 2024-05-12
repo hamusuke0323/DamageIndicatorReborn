@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hamusuke.damageindicatorreborn.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EntityMixin",
+    "LivingEntityMixin",
+    "SynchedEntityDataMixin"
+  ],
+  "refmap": "mixins.damageindicatorreborn.refmap.json"
+}
