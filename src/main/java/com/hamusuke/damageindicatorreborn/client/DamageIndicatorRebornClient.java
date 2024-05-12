@@ -13,9 +13,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.ClientPlayerNetworkEvent;
 import net.minecraftforge.client.event.ClientPlayerNetworkEvent.LoggingIn;
 import net.minecraftforge.client.event.ClientPlayerNetworkEvent.LoggingOut;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
@@ -33,7 +30,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import static com.hamusuke.damageindicatorreborn.DamageIndicatorReborn.MOD_ID;
 
-@OnlyIn(Dist.CLIENT)
 public final class DamageIndicatorRebornClient {
     private static DamageIndicatorRebornClient INSTANCE;
     private static final Minecraft mc = Minecraft.getInstance();

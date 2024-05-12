@@ -22,7 +22,7 @@ public class Network {
             .named(new ResourceLocation(MOD_ID, "main"))
             .networkProtocolVersion(() -> PROTOCOL_VERSION)
             .serverAcceptedVersions(PROTOCOL_VERSION::equals)
-            .clientAcceptedVersions(PROTOCOL_VERSION::equals)
+            .clientAcceptedVersions(s -> true)
             .simpleChannel();
     private static final AtomicInteger COUNTER = new AtomicInteger(0);
     private static final Supplier<Integer> ID = COUNTER::getAndIncrement;
