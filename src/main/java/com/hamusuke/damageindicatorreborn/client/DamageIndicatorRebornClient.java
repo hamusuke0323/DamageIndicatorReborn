@@ -54,6 +54,7 @@ public final class DamageIndicatorRebornClient {
 
     @SubscribeEvent
     public void onClientPlayerLoggingIn(final LoggingIn e) {
+        SERVER_SIDED.set(false);
         Network.sendToServer(new SYNReq());
     }
 
