@@ -21,7 +21,7 @@ public class Network {
     private static final SimpleChannel MAIN = ChannelBuilder
             .named(new ResourceLocation(MOD_ID, "main"))
             .networkProtocolVersion(() -> PROTOCOL_VERSION)
-            .serverAcceptedVersions(PROTOCOL_VERSION::equals)
+            .serverAcceptedVersions(s -> true)
             .clientAcceptedVersions(s -> true)
             .simpleChannel();
     private static final AtomicInteger COUNTER = new AtomicInteger(0);
